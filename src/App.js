@@ -1,10 +1,15 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
+import Header from "./Header"
 
 function App() {
   return (
     <div>
-      {/* codebase cleanup */}
-
+      <Header/>
+      <button> Add </button>
+      <div>
+        <span>Name</span><br />
+        <span>Phone</span>
+      </div>
     </div>
   );
 }
