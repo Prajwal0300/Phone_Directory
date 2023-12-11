@@ -1,0 +1,30 @@
+
+.button {
+    margin: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(66, 197, 66);
+    border: none;
+    text-transform: uppercase;
+}
+
+.item {
+    color: grey;
+    font-weight: bold;
+    margin: 20px;
+    margin: 0;
+    /* Resetting margin */
+    padding: 0;
+    /* Resetting padding */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.custom-btn{
+    color: white;
+    background-color: red;
+}
