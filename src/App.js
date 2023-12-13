@@ -6,23 +6,31 @@ import { render } from '@testing-library/react';
 
 class App extends Component {
 
+
+  constructor() {
+    super();
+    this.state= {
+      subscribersListToShow:[]
+    }
+  }
+
   deleteHandler(message) {
     alert(message);
   }
 
   // Define subscribers as a class property
-  subscribers = [
-    {
-      id:1,
-      name: "Shilpa Bhat",
-      phone: "8888888888"
-    },
-    {
-      id:2, 
-      name: "Srishti",
-      phone: "8888888888"
-    }
-  ];
+  // subscribers = [
+  //   {
+  //     id:1,
+  //     name: "Shilpa Bhat",
+  //     phone: "8888888888"
+  //   },
+  //   {
+  //     id:2, 
+  //     name: "Srishti",
+  //     phone: "8888888888"
+  //   }
+  // ];
 
   render() {
     return (
@@ -37,7 +45,7 @@ class App extends Component {
           </div>
 
           {
-            this.subscribers.map(sub => {
+            this.state.subscribersListToShow.map(sub => {
               return (
                 <div className='grid-container' key={sub.id}>
                   <span className='item'>{sub.name}</span>
